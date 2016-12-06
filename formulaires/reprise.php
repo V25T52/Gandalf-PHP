@@ -1,0 +1,1 @@
+<a href="traitement.php?action=delete&id_user=4">DELETE USER</a>
