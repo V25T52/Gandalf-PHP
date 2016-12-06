@@ -5,8 +5,9 @@
 	<title>Formulaires</title>
 </head>
 <body>
-	<form action="traitement.php">
-		<input type="text" name="prenom"><br>
+	<form method="POST" action="traitement.php">
+		<input type="text" name="prenom" placeholder="Prénom"><br>
+		<input type="text" name="nom" placeholder="Nom">
 		<input type="submit" value="Envoyer">
 	</form>
 </body>
