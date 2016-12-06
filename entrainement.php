@@ -310,6 +310,45 @@ for($i = 1; $i < 1001; ++$i)
 }
 brr();
 echo $sum;
+
+
+?>
+
+<hr>
+<h2>OBJETS</h2>
+<?php
+class Etudiant
+{
+	public $prenom;
+	public $age;
+	public function __construct($prenom, $age)
+	{
+		$this->prenom = $prenom;
+		$this->age = $age;
+	}
+
+	public function pays()
+	{
+		return 'France';
+	}
+}
+
+$etudiant = new Etudiant('Nicolas', 232490);
+echo '<pre>'; var_dump($etudiant); echo '</pre>';
+echo $etudiant->prenom;
+br();
+echo $etudiant->age;
+echo '<pre>'; var_dump($etudiant); echo '</pre>';
+echo $etudiant->pays();
+
+
+goto a;
+echo 'bonjour';
+
+a:
+echo 'Coucou';
+
+
 ?>
 <br><br><br><br><br><br><br>
 </body>
